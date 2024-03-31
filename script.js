@@ -14,7 +14,7 @@ forecast_btn.addEventListener("click", (e) => {
 async function get_forecast(location_name) {
   try {
     const first_request = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=8dc51e6e24ac47c7b26224039243003&q=${location_name}&days=7&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=8dc51e6e24ac47c7b26224039243003&q=${location_name}&days=7&aqi=no&alerts=no`,
       { mode: "cors" }
     );
     const json_result = await first_request.json();
